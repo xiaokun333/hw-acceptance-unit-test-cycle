@@ -11,7 +11,7 @@ class Movie < ActiveRecord::Base
     end
   end
 
-  def self.search_directors director 
+  def self.search_directors(director)
     Movie.where(:director => director)
   end
   

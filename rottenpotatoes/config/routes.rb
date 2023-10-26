@@ -4,7 +4,7 @@ Rottenpotatoes::Application.routes.draw do
   root :to => redirect('/movies')
 
   # match 'photos', to: 'photos#show', via: [:get, :post]
-  match '/movies/:id/same_director(.:format)',  to: 'movies#select_by_director', as: 'search_directors', via: :get
+  match '/movies/:id/similar',  to: 'movies#select_by_director', as: 'search_directors', via: :get
 
 
 end
